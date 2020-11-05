@@ -1,24 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gZm-GG-Nuz">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Herrero-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HerreroViewController" id="BYZ-38-t0r" customClass="HerreroViewController" customModule="HeroesNiveles" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxm-1A-he9">
+                                <rect key="frame" x="0.0" y="44" width="414" height="692"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Mostrar heroe"/>
+                                <connections>
+                                    <action selector="muestraHeroe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="87w-AA-vg2"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qxm-1A-he9" secondAttribute="trailing" id="3QE-qX-JBj"/>
+                            <constraint firstItem="qxm-1A-he9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="74t-df-X4j"/>
+                            <constraint firstItem="qxm-1A-he9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7MA-pZ-dfC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qxm-1A-he9" secondAttribute="bottom" id="fkk-ea-gCn"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Herrero" id="Uf9-DE-kjO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="913.04347826086962" y="66.964285714285708"/>
+        </scene>
+        <!--Heroe View Controller-->
+        <scene sceneID="Hh2-IA-Y06">
+            <objects>
+                <viewController storyboardIdentifier="HeroeViewController" id="TFV-gH-rFF" customClass="HeroeViewController" customModule="HeroesNiveles" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fLJ-bw-b7A">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heroe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kzs-Ev-STG">
+                                <rect key="frame" x="181" y="20" width="47" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KxZ-pU-sS9">
+                                <rect key="frame" x="181" y="64" width="47" height="30"/>
+                                <state key="normal" title="Mejora"/>
+                                <connections>
+                                    <action selector="mejoraEspada:" destination="TFV-gH-rFF" eventType="touchUpInside" id="tPG-fE-PyQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nivel _" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqs-l0-KMo">
+                                <rect key="frame" x="178.66666666666666" y="117" width="51.666666666666657" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="otB-2e-Ty6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KxZ-pU-sS9" firstAttribute="centerX" secondItem="yqs-l0-KMo" secondAttribute="centerX" id="PJd-g8-iau"/>
+                            <constraint firstItem="KxZ-pU-sS9" firstAttribute="top" secondItem="Kzs-Ev-STG" secondAttribute="bottom" constant="23" id="Qvj-t1-bEY"/>
+                            <constraint firstItem="Kzs-Ev-STG" firstAttribute="top" secondItem="otB-2e-Ty6" secondAttribute="top" constant="20" id="YZ7-ND-dvu"/>
+                            <constraint firstItem="Kzs-Ev-STG" firstAttribute="leading" secondItem="KxZ-pU-sS9" secondAttribute="leading" id="aDc-sI-0g6"/>
+                            <constraint firstItem="Kzs-Ev-STG" firstAttribute="leading" secondItem="otB-2e-Ty6" secondAttribute="leading" constant="181" id="mdP-mb-dhb"/>
+                            <constraint firstItem="yqs-l0-KMo" firstAttribute="top" secondItem="KxZ-pU-sS9" secondAttribute="bottom" constant="23" id="z93-Gw-0Jr"/>
+                            <constraint firstItem="Kzs-Ev-STG" firstAttribute="trailing" secondItem="KxZ-pU-sS9" secondAttribute="trailing" id="zuV-GN-ZNb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelNivel" destination="yqs-l0-KMo" id="jld-GR-R3Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FMi-ba-Lfa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1697" y="67"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="moQ-Xa-bxS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gZm-GG-Nuz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="f4b-hr-n76">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Fo9-Ec-xrI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KIy-2C-Uuy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2.8985507246376816" y="66.964285714285708"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

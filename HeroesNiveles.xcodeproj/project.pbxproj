@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		3008BAD625533C6300721521 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3008BAD525533C6300721521 /* AppDelegate.swift */; };
 		3008BAD825533C6300721521 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3008BAD725533C6300721521 /* SceneDelegate.swift */; };
-		3008BADA25533C6300721521 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3008BAD925533C6300721521 /* ViewController.swift */; };
+		3008BADA25533C6300721521 /* HerreroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3008BAD925533C6300721521 /* HerreroViewController.swift */; };
 		3008BADD25533C6300721521 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3008BADB25533C6300721521 /* Main.storyboard */; };
 		3008BADF25533C7600721521 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3008BADE25533C7600721521 /* Assets.xcassets */; };
 		3008BAE225533C7600721521 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3008BAE025533C7600721521 /* LaunchScreen.storyboard */; };
+		3008BAEB25533EDD00721521 /* HerreroDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3008BAEA25533EDD00721521 /* HerreroDelegate.swift */; };
+		3008BAEE25533EFE00721521 /* HeroeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3008BAED25533EFE00721521 /* HeroeDelegate.swift */; };
+		3008BAF125533FB200721521 /* Sword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3008BAF025533FB200721521 /* Sword.swift */; };
+		307D5B4725544EF1004F6943 /* HeroeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307D5B4625544EF1004F6943 /* HeroeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3008BAD225533C6300721521 /* HeroesNiveles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeroesNiveles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3008BAD525533C6300721521 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3008BAD725533C6300721521 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3008BAD925533C6300721521 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3008BAD925533C6300721521 /* HerreroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerreroViewController.swift; sourceTree = "<group>"; };
 		3008BADC25533C6300721521 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3008BADE25533C7600721521 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3008BAE125533C7600721521 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3008BAE325533C7600721521 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3008BAEA25533EDD00721521 /* HerreroDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerreroDelegate.swift; sourceTree = "<group>"; };
+		3008BAED25533EFE00721521 /* HeroeDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroeDelegate.swift; sourceTree = "<group>"; };
+		3008BAF025533FB200721521 /* Sword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sword.swift; sourceTree = "<group>"; };
+		307D5B4625544EF1004F6943 /* HeroeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +66,15 @@
 			children = (
 				3008BAD525533C6300721521 /* AppDelegate.swift */,
 				3008BAD725533C6300721521 /* SceneDelegate.swift */,
-				3008BAD925533C6300721521 /* ViewController.swift */,
+				3008BAD925533C6300721521 /* HerreroViewController.swift */,
 				3008BADB25533C6300721521 /* Main.storyboard */,
 				3008BADE25533C7600721521 /* Assets.xcassets */,
 				3008BAE025533C7600721521 /* LaunchScreen.storyboard */,
 				3008BAE325533C7600721521 /* Info.plist */,
+				3008BAEA25533EDD00721521 /* HerreroDelegate.swift */,
+				3008BAED25533EFE00721521 /* HeroeDelegate.swift */,
+				3008BAF025533FB200721521 /* Sword.swift */,
+				307D5B4625544EF1004F6943 /* HeroeViewController.swift */,
 			);
 			path = HeroesNiveles;
 			sourceTree = "<group>";
@@ -137,9 +149,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3008BADA25533C6300721521 /* ViewController.swift in Sources */,
+				3008BADA25533C6300721521 /* HerreroViewController.swift in Sources */,
 				3008BAD625533C6300721521 /* AppDelegate.swift in Sources */,
+				3008BAEE25533EFE00721521 /* HeroeDelegate.swift in Sources */,
+				3008BAEB25533EDD00721521 /* HerreroDelegate.swift in Sources */,
 				3008BAD825533C6300721521 /* SceneDelegate.swift in Sources */,
+				307D5B4725544EF1004F6943 /* HeroeViewController.swift in Sources */,
+				3008BAF125533FB200721521 /* Sword.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
